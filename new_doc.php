@@ -41,7 +41,7 @@ section {
 }
 
 .left-container {
-    width: 850px;
+    width: 100%;
     height: auto;
     margin: auto;
     margin-top: 30px;
@@ -64,10 +64,11 @@ section {
 
 .first-line {
     display: flex;
+    width: 100%:
 }
 
 .fa-book {
-    color: rgb(36, 20, 113);
+    color: rgb(2, 49, 97);
     font-size: 20px;
     padding-left: 30px;
     padding-right: 5px;
@@ -75,32 +76,38 @@ section {
 }
 
 .premium {
-    color: rgb(36, 20, 113);
+    color: rgb(2, 49, 97);
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
     padding-top: 25px;
 }
 
+.right-side {
+    width: 100%;
+}
+
 .fee {
-    padding-left: 140px;
+    padding-left: 80px;
     font-weight: 400;
     font-size: 18px;
     letter-spacing: 1px;
     padding-top: 25px;
+    color: rgb(2, 49, 97);
+    margin: auto;
 }
 
 .payments {
     width: 200px;
-    height: 30px;
+    height: 50px;
     border: 1px solid rgb(203, 203, 203);
     border-radius: none;
-    margin-left: 20px;
+    margin: auto;
     margin-top: 20px;
 }
 
 .divisor {
-    border-bottom: 3px solid rgb(0, 164, 175);
+    border-bottom: 3px solid rgb(26, 176, 182);
     width: 60px;
     margin-left: 55px;
 }
@@ -111,7 +118,7 @@ section {
 
 .second-line h1 {
     padding-top: 5px;
-    color: rgb(199, 0, 0);
+    color: rgb(201, 63, 48);
     font-size: 15px;
     font-weight: 700;
     text-align: center;
@@ -132,41 +139,41 @@ section {
 }
 
 .questions {
-    font-size: 11px;
-    background: rgb(48, 148, 255);
+    font-size: 13px;
+    background: rgb(57, 145, 204);
     color: rgb(255, 255, 255);
     border: 1px solid (57, 130, 255);
     border-radius: 5px;
     text-align: center;
     padding: 3px;
-    margin-left: 15px;
+    margin: auto;
 }
 
 .tax-filing {
-    font-size: 11px;
-    background: rgb(48, 148, 255);
+    font-size: 13px;
+    background: rgb(57, 145, 204);
     color: rgb(255, 255, 255);
     border: 1px solid (57, 130, 255);
     border-radius: 5px;
     text-align: center;
     padding: 3px;
-    margin-left: 15px;
+    margin: auto;
 }
 
 .tax-refund {
-    font-size: 11px;
-    background: rgb(48, 148, 255);
+    font-size: 13px;
+    background: rgb(57, 145, 204);
     color: rgb(255, 255, 255);
     border: 1px solid (57, 130, 255);
     border-radius: 5px;
     text-align: center;
     padding: 3px;
-    margin-left: 15px;
+    margin: auto;
 }
 
 .fourth-line {
-    width: 500px;
-    margin-left: 20px;
+    width: 550px;
+    margin: auto;
 }
 
 .fourth-line h1 {
@@ -178,33 +185,36 @@ section {
 }
 
 .fifth-line {
+    width: 100%;
     display: flex;
     margin-bottom: 5px;
+    margin: auto;
+    
 }
 
 .fifth-line h1 {
-    padding-top: 15px;
-    margin-left: 15px;
-    color: rgb(199, 0, 0);
+    margin: auto;
+    color: rgb(201, 63, 48);
     font-size: 13px;
     font-weight: 700;
 }
 
 .online-tax {
-    width: 170px;
-    height: 30px;
+    width: 200px;
+    height: 40px;
     border: 1px solid rgb(203, 203, 203);
     border-radius: none;
-    margin-left: 70px;
-    margin-top: 5px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .start-now {
     height: 30px;
     width: 130px;
     color: white;
-    background: rgb(0, 164, 175);
-    margin-left: 50px;
+    background: rgb(26, 176, 182);
+    margin: auto;
+    margin-right: 10px;
     margin-top: 5px;
     font-size: 15px;
     border: 1px solid rgb(0, 164, 175);
@@ -221,10 +231,11 @@ section {
     font-weight 700;
     margin-left: 20px;
     padding-top: 40px;
+    color: rgb(2, 49, 97);
 }
 
 .second-divisor {
-    border-bottom: 3px solid rgb(0, 164, 175);
+    border-bottom: 3px solid rgb(26, 176, 182);
     width: 60px;
     margin-left: 20px;
 }
@@ -269,11 +280,12 @@ section {
 .plan-instructor-info {
     height: 140px;
     width: 100%;
-    border: 1px solid rgb(169, 169, 169);
+    border: 1px solid rgb(2, 49, 97);
     line-height: 30px;
     text-align: justify;
     display: none;
     padding: 10px 20px;
+    box-sizing: border-box;
 }
 
 .related-plan {
@@ -284,7 +296,7 @@ section {
 
 .related-plans {
     margin-top: 70px;
-    color: rgb(36, 20, 113);
+    color: gb(2, 49, 97);
 }
 
 .novice-plan {
@@ -316,7 +328,7 @@ section {
     font-size: 15px;
     font-weight: 100;
     letter-spacing: 1px;
-    background: rgb(213, 105, 123);
+    background: rgb(208, 105, 146);
     color: rgb(255, 255, 255);
 }
 
@@ -327,7 +339,7 @@ section {
     font-size: 15px;
     font-weight: 100;
     letter-spacing: 1px;
-    background:rgb(24, 147, 205);
+    background:rgb(57, 145, 204);
     color: rgb(255, 255, 255);
 }
 
@@ -336,6 +348,7 @@ section {
     height: auto;
     margin: auto;
     margin-top: 30px;
+    margin-left: 30px;
     box-shadow: 3px 3px 5px 6px #cbcbcb;
 }
 
@@ -743,7 +756,7 @@ section {
                             <div class="first-line">
                                 <i class="fas fa-book"></i>
                                 <span class="premium">PREMIUM</span>
-                                <h1 class="fee">FEE</h1>
+                                <h1 class="fee">FEE TYPE</h1>
                                 <select class="payments">
                                     <option value="one-time-payment">One Time-Payment</option>
                                 </select>
@@ -1055,32 +1068,32 @@ const reviews = 'Reviews: icabo inventore natus dolor ipsa al';
 //Variables
 var currentInfoDisplayed = ' ';
 
-$('.plan-description').on('click', () => {
-  planInstructorButtonClicked(planDescription);
+$('.plan-description').on('click', (event) => {
+  planInstructorButtonClicked(planDescription, event);
 });
 
-$('.upload-file').on('click', () => {
-  planInstructorButtonClicked(uploadFiles);
+$('.upload-file').on('click', (event) =>  {
+  planInstructorButtonClicked(uploadFiles, event);
 });
 
-$('.live-chat').on('click', () => {
-  planInstructorButtonClicked(liveChatAndCalling);
+$('.live-chat').on('click', (event) => {
+  planInstructorButtonClicked(liveChatAndCalling, event);
 });
 
-$('.connect-socially').on('click', () => {
-  planInstructorButtonClicked(connectSocially);
+$('.connect-socially').on('click', (event) =>  {
+  planInstructorButtonClicked(connectSocially, event);
 });
 
-$('.question-answer').on('click', () => {
-  planInstructorButtonClicked(questionAndAnswers);
+$('.question-answer').on('click', (event) =>  {
+  planInstructorButtonClicked(questionAndAnswers, event);
 });
 
-$('.reviews').on('click', () => {
-  planInstructorButtonClicked(reviews);
+$('.reviews').on('click', (event) =>  {
+  planInstructorButtonClicked(reviews, event);
 });
 
-function planInstructorButtonClicked(clicked_id) {
-  event.preventDefault();
+function planInstructorButtonClicked(clicked_id, event) {
+  event.preventDefault(); 
   //Check if box is displayed
   if (currentInfoDisplayed === ' ') {
     currentInfoDisplayed = clicked_id;

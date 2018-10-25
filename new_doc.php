@@ -27,24 +27,28 @@
 
     <link href="css_new/cards.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+
+
 <style>
 
 
 section {
-    height: 1200px;
+    height: 900px;
 }
 
 .big-container {
     width: 100%;
-    height: 1000px;
+    height: 950px;
     display: flex;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 40px;
 }
 
 .left-container {
     width: 100%;
     height: auto;
-    margin: auto;
-    margin-top: 30px;
+    margin-right: 20px;
 }
 
 .first-section {
@@ -56,10 +60,14 @@ section {
 }
 
 .premium-box {
-    width: 300px;
-    height: 300px;
-    border: 1px solid rgb(170, 170, 170);
-    background: rgb(0, 0, 0);
+    width: 230px;
+    height: 230px;
+    border: 1px solid #cbcbcb;
+    background-image: url("images/premium-logo_4.png");
+    background-size: 300px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-position: center;
 }
 
 .first-line {
@@ -72,7 +80,7 @@ section {
     font-size: 20px;
     padding-left: 30px;
     padding-right: 5px;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .premium {
@@ -80,7 +88,7 @@ section {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
-    padding-top: 25px;
+    padding-top:40px;
 }
 
 .right-side {
@@ -88,13 +96,13 @@ section {
 }
 
 .fee {
-    padding-left: 80px;
+    padding-left: 200px;
+    padding-right: 20px;
     font-weight: 400;
     font-size: 18px;
     letter-spacing: 1px;
-    padding-top: 25px;
+    padding-top: 40px;
     color: rgb(2, 49, 97);
-    margin: auto;
 }
 
 .payments {
@@ -102,8 +110,7 @@ section {
     height: 50px;
     border: 1px solid rgb(203, 203, 203);
     border-radius: none;
-    margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .divisor {
@@ -122,11 +129,13 @@ section {
     font-size: 15px;
     font-weight: 700;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
 }
 
 .fa-star {
     color: rgb(255, 217, 0);
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 .fa-star-half-alt {
@@ -134,46 +143,57 @@ section {
 }
 
 .third-line {
-    padding-top: 15px;
+    padding-top: 5px;
     display: flex;
+    width: 100%;
+    margin: auto;
 }
 
 .questions {
     font-size: 13px;
+    font-weight: 600;
     background: rgb(57, 145, 204);
     color: rgb(255, 255, 255);
     border: 1px solid (57, 130, 255);
     border-radius: 5px;
     text-align: center;
-    padding: 3px;
     margin: auto;
+    padding: 5px;
+    width: 215px;
+    height: 30px;
 }
 
 .tax-filing {
     font-size: 13px;
+    font-weight: 600;
     background: rgb(57, 145, 204);
     color: rgb(255, 255, 255);
     border: 1px solid (57, 130, 255);
     border-radius: 5px;
     text-align: center;
-    padding: 3px;
+    padding: 5px;
     margin: auto;
+    width: 215px;
+    height: 30px;
 }
 
 .tax-refund {
     font-size: 13px;
+    font-weight: 600;
     background: rgb(57, 145, 204);
     color: rgb(255, 255, 255);
     border: 1px solid (57, 130, 255);
     border-radius: 5px;
     text-align: center;
-    padding: 3px;
+    padding: 5px;
     margin: auto;
+    width: 215px;
+    height: 30px;
 }
 
 .fourth-line {
-    width: 550px;
-    margin: auto;
+    width: 650px;
+    margin: 5px;;
 }
 
 .fourth-line h1 {
@@ -189,11 +209,11 @@ section {
     display: flex;
     margin-bottom: 5px;
     margin: auto;
-    
 }
 
 .fifth-line h1 {
-    margin: auto;
+    margin-left: 10px;
+    margin-top: 10px;
     color: rgb(201, 63, 48);
     font-size: 13px;
     font-weight: 700;
@@ -222,15 +242,15 @@ section {
 
 .second-section {
     width: 100%;
-    height: 690px;
+    height: 580px;
     box-shadow: 3px 3px 5px 6px #cbcbcb;
 }
 
 .second-section h1 {
     font-size: 18px;
-    font-weight 700;
+    font-weight: 700;
     margin-left: 20px;
-    padding-top: 40px;
+    padding-top: 20px;
     color: rgb(2, 49, 97);
 }
 
@@ -241,7 +261,7 @@ section {
 }
 
 .sections {
-    padding: 10px 100px;
+    padding: 2px 100px;
     padding-left: 0;
     width: 100%;
     box-sizing: border-box;
@@ -264,7 +284,7 @@ section {
     padding: 0 10px;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
     color: rgb(0, 0, 0);
 }
 
@@ -277,32 +297,41 @@ section {
     border-radius: 5px;
 }
 
+.sections .pressed {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    background: rgb(29, 36, 87);
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
 .plan-instructor-info {
-    height: 140px;
+    height: auto;
     width: 100%;
-    border: 1px solid rgb(2, 49, 97);
+    border: 1px solid #cbcbcb;
     line-height: 30px;
     text-align: justify;
-    display: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
     box-sizing: border-box;
+    font-size: 14px;
 }
 
 .related-plan {
-    width: 100%;
-    height: auto;
     display: flex;
 }
 
 .related-plans {
-    margin-top: 70px;
-    color: gb(2, 49, 97);
+    font-weight: 700;
+    color: rgb(2, 49, 97);
 }
 
 .novice-plan {
     width: 250px;
     height: 250px;
-    background: rgb(0, 0, 0);
+    background: url("images/novice.jpg");
+    background-size: 220px;
+    background-position: top;
     margin: auto;
 }
 
@@ -311,12 +340,17 @@ section {
     height: 250px;
     background: rgb(0, 0, 0);
     margin: auto;
+    background: url("images/basic.jpg");
+    background-size: 200px;
+    background-position: top;
 }
 
 .premium-plan {
     width: 250px;
     height: 250px;
-    background: rgb(0, 0, 0);
+    background: url("images/premium-star.jpg");
+    background-size: 220px;
+    background-position: top;
     margin: auto;
 }
 
@@ -344,26 +378,63 @@ section {
 }
 
 .right-container {
-    width: 200px;
-    height: auto;
-    margin: auto;
-    margin-top: 30px;
-    margin-left: 30px;
+    width: 100%;
+    height: 900px;
     box-shadow: 3px 3px 5px 6px #cbcbcb;
 }
 
 .third-section {
     width: 100%;
-    height: 960px;
+    height: 900px;
+    margin: auto;
+    padding: 10px;
+}
+
+.box-image-1 {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #cbcbcb;
+    margin-bottom: 20px;
+    background: url("images/cellphone-unsplash.png");
+    background-size: 190px;
+    background-position: center;
+}
+
+.box-image-2 {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #cbcbcb;
+    margin-bottom: 20px;
+    background: url("images/cellphone-unsplash.png");
+    background-size: 190px;
+    background-position: center;
+}
+
+.box-image-3 {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #cbcbcb;
+    margin-bottom: 20px;
+    background: url("images/cellphone-unsplash.png");
+    background-size: 190px;
+    background-position: center;
+}
+
+.box-image-4 {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #cbcbcb;
+    margin-bottom: 20px;
+    background: url("images/cellphone-unsplash.png");
+    background-size: 190px;
+    background-position: center;
 }
 
 /* mobile styles */
 
 @media(max-width: 580px) {
 
-section {
-    height: 2800px;
-}
+
 
 .big-container {
     display: block;
@@ -371,6 +442,8 @@ section {
 
 .left-container {
     width: 100%;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 .first-section {
@@ -378,6 +451,7 @@ section {
 }
 
 .premium-box {
+    margin: auto;
     width: 100%;
 }
 
@@ -390,13 +464,16 @@ section {
 }
 
 .fee {
-    padding-left: 30px;
+    padding-left: 10px;
+    padding-top: 20px;
 }
 
 .payments {
     width: 100%;
     margin-left: 0;
     padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .divisor {
@@ -415,6 +492,7 @@ section {
 .second-line h1 {
     margin: auto;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .third-line {
@@ -422,24 +500,24 @@ section {
 }
 
 .questions {
-    margin: 0;
+    margin: auto;
     margin-bottom: 3px;
 }
 
 .tax-filing {
-    margin: 0;
+    margin: auto;
     margin-bottom: 3px;
 }
 
 .tax-refund {
-    margin: 0;
+    margin: auto;
     margin-bottom: 3px;
 }
 
 .fourth-line {
     width: 100%;
     margin: 0;
-    padding: 5px;
+    padding: px;
 }
 
 .fifth-line {
@@ -460,15 +538,17 @@ section {
 }
 
 .start-now {
-    width: 200px;
+    width: 100%;
     height: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 70px;
+    margin: auto;
 }
 
 .sections ul {
     display: block;
+}
+
+.second-section {
+    height: auto;
 }
 
 .second-section h1 {
@@ -480,29 +560,33 @@ section {
 }
 
 .plan-instructor-info {
-    height: 320px;
+    height: auto;
 }
 
 .related-plans {
-    margin-top: 220px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .novice-plan {
     width: 100%;
     height: 300px;
     margin-bottom: 10px;
+    background-size: 300px;
 }
 
 .basic-plan {
     width: 100%;
     height: 300px;
     margin-bottom: 10px;
+    background-size: 300px;
 }
 
 .premium-plan {
     width: 100%;
     height: 300px;
     margin-bottom: 10px;
+    background-size: 300px;
 }
 
 .plan {
@@ -512,13 +596,17 @@ section {
 .right-container {
     width: 100%;
     height: auto;
-    margin-top: 870px;
 }
 
 .third-section {
+    /* margin-top: 1000px; */
     width: 100%;
-    height: 300px;
 }
+
+footer {
+    padding-top: 2400px;
+}
+
 
 }
 
@@ -531,10 +619,15 @@ section {
 
 .big-container {
     display: block;
+    width: 100%;
 }
 
 .left-container {
     width: 100%;
+}
+
+.premium-box {
+    margin-top: 70px;
 }
 
 .fa-book {
@@ -547,6 +640,7 @@ section {
 
 .payments {
     width: 150px;
+    font-size: 12px;
 }
 
 .plan {
@@ -567,29 +661,34 @@ section {
 }
 
 .questions {
-    width: 110px;
-    font-size: 10px;
-    margin-left: 20px;
+    width: 300px;
+    font-size: 12px;
+    margin: auto;
+    margin-bottom: 5px;
 }
 
 .tax-filing {
-    width: 110px;
-    font-size: 10px;
-    margin-left: 10px;
+    width: 300px;
+    font-size: 12px;
+    margin: auto;
+    margin-bottom: 5px;
 }
 
 .tax-refund {
-    width: 110px;
-    font-size: 10px;
-    margin-left: 10px;
+    width: 300px;
+    font-size: 12px;
+    margin: auto;
+    margin-bottom: 5px;
 }
 
 .third-line {
     padding-top: 5px;
+    display: block;
 }
 
 .fourth-line {
-    width: 350px;
+    width: 400px;
+    margin: auto;
 }
 
 .fifth-line h1 {
@@ -597,8 +696,9 @@ section {
 }
 
 .online-tax {
-    width: 110px;
-    margin-left: 40px;
+    width: 150px;
+    margin-left: 50px;
+    font-size: 12px;
 }
 
 .start-now {
@@ -619,7 +719,7 @@ section {
 }
 
 .plan-instructor-info {
-    height: 170px;
+    height: auto;
 }
 
 .third-section {
@@ -642,6 +742,19 @@ section {
     height: 200px;
 }
 
+.right-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 240px;
+}
+
+.third-section {
+    display: flex;
+}
+
+footer {
+    padding-top: 350px;
+}
 }
 
 
@@ -739,7 +852,7 @@ section {
       
       
 	
-	<section class="about-us">
+	<!-- <section class="about-us"> -->
         <div class="container">
 		
             <!-- this is the body part so Do everything here only -->
@@ -747,9 +860,7 @@ section {
                 <div class="left-container">
                     <div class="first-section">
                         <div class="left-side">
-                            <div class="premium-box">
-                                <span>Premium Logo</span>
-                            </div>
+                            <div class="premium-box"></div>
                         </div>
 
                         <div class="right-side">
@@ -826,7 +937,12 @@ section {
                                 </ul>
                             </div>
                                 
-                            <div class="plan-instructor-info"></div>
+                            <div class="plan-instructor-info">
+                                <p>MyTax services are on your side, you won't need to worry about how tax preparation software 
+                                works and wheter or not it is reliable. MyTax reduces time, cost and guesswork will be eliminated. 
+                                MyTax services are on your side, you won't need to worry about how tax preparation software works 
+                                and whether or not it is reliable. MyTax reduces time, cost and guesswork will be eliminated.'</p>
+                            </div>
 
                             <h1 class="related-plans">RELATED PLANS</h1>
                             
@@ -854,7 +970,12 @@ section {
             </div>
 
                 <div class="right-container">
-                    <div class="third-section"></div>
+                    <div class="third-section">
+                    <div class="box-image-1"></div>
+                    <div class="box-image-2"></div>
+                    <div class="box-image-3"></div>
+                    <div class="box-image-4"></div>
+                    </div>
                 </div>
 
             </div>
@@ -1066,48 +1187,74 @@ const questionAndAnswers = 'Questions; icabo inventore natus dolor ipsa al';
 const reviews = 'Reviews: icabo inventore natus dolor ipsa al';
 
 //Variables
-var currentInfoDisplayed = ' ';
+var currentInfoDisplayed = 'MyTax services are on your side, you won\'t need to worry about how tax preparation software works and wheter or not it is reliable. MyTax reduces time, cost and guesswork will be eliminated. MyTax services are on your side, you won\'t need to worry about how tax preparation software works and whether or not it is reliable. MyTax reduces time, cost and guesswork will be eliminated.';
 
 $('.plan-description').on('click', (event) => {
-  planInstructorButtonClicked(planDescription, event);
+    $('.plan-description').addClass('pressed');
+    $('.upload-file').removeClass('pressed');
+    $('.live-chat').removeClass('pressed');
+    $('.connect-socially').removeClass('pressed');
+    $('.question-answer').removeClass('pressed');
+    $('.reviews').removeClass('pressed');
+    planInstructorButtonClicked(planDescription, event);
 });
 
 $('.upload-file').on('click', (event) =>  {
-  planInstructorButtonClicked(uploadFiles, event);
+    $('.plan-description').removeClass('pressed');
+    $('.upload-file').addClass('pressed');
+    $('.live-chat').removeClass('pressed');
+    $('.connect-socially').removeClass('pressed');
+    $('.question-answer').removeClass('pressed');
+    $('.reviews').removeClass('pressed');
+    planInstructorButtonClicked(uploadFiles, event);
 });
 
 $('.live-chat').on('click', (event) => {
-  planInstructorButtonClicked(liveChatAndCalling, event);
+    $('.plan-description').removeClass('pressed');
+    $('.upload-file').removeClass('pressed');padding: 0;
+    $('.live-chat').addClass('pressed');
+    $('.connect-socially').removeClass('pressed');
+    $('.question-answer').removeClass('pressed');
+    $('.reviews').removeClass('pressed');
+    planInstructorButtonClicked(liveChatAndCalling, event);
 });
 
 $('.connect-socially').on('click', (event) =>  {
-  planInstructorButtonClicked(connectSocially, event);
+    $('.plan-description').removeClass('pressed');
+    $('.upload-file').removeClass('pressed');
+    $('.live-chat').removeClass('pressed');
+    $('.connect-socially').addClass('pressed');
+    $('.question-answer').removeClass('pressed');
+    $('.reviews').removeClass('pressed');
+    planInstructorButtonClicked(connectSocially, event);
 });
 
 $('.question-answer').on('click', (event) =>  {
-  planInstructorButtonClicked(questionAndAnswers, event);
+    $('.plan-description').removeClass('pressed');
+    $('.upload-file').removeClass('pressed');
+    $('.live-chat').removeClass('pressed');
+    $('.connect-socially').removeClass('pressed');
+    $('.question-answer').addClass('pressed');
+    $('.reviews').removeClass('pressed');
+    planInstructorButtonClicked(questionAndAnswers, event);
 });
 
 $('.reviews').on('click', (event) =>  {
-  planInstructorButtonClicked(reviews, event);
+    $('.plan-description').removeClass('pressed');
+    $('.upload-file').removeClass('pressed');
+    $('.live-chat').removeClass('pressed');
+    $('.connect-socially').removeClass('pressed');
+    $('.question-answer').removeClass('pressed');
+    $('.reviews').addClass('pressed');
+    planInstructorButtonClicked(reviews, event);
 });
 
 function planInstructorButtonClicked(clicked_id, event) {
-  event.preventDefault(); 
-  //Check if box is displayed
-  if (currentInfoDisplayed === ' ') {
-    currentInfoDisplayed = clicked_id;
-    $('.plan-instructor-info').slideDown();
-    $('.plan-instructor-info').html(currentInfoDisplayed);
-  } else {
-    if (currentInfoDisplayed === clicked_id) {
-      currentInfoDisplayed = ' ';
-      $('.plan-instructor-info').slideUp();
-    } else {
-      currentInfoDisplayed = clicked_id;
-      $('.plan-instructor-info').html(currentInfoDisplayed);
-    }
-  }
+    event.preventDefault(); 
+    if (currentInfoDisplayed !== clicked_id) {
+        currentInfoDisplayed = clicked_id;
+        $('.plan-instructor-info').html(currentInfoDisplayed);
+    } 
 };
 
 $(document).ready(function () {

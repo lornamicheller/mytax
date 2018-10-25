@@ -317,6 +317,10 @@ section {
     font-size: 14px;
 }
 
+.fa-facebook {
+    color: red;
+}
+
 .related-plan {
     display: flex;
 }
@@ -1178,13 +1182,14 @@ s0.parentNode.insertBefore(s1,s0);
 
 
 
+
 //Constants
 const planDescription = 'MyTax services are on your side, you won\'t need to worry about how tax preparation software works and wheter or not it is reliable. MyTax reduces time, cost and guesswork will be eliminated. MyTax services are on your side, you won\'t need to worry about how tax preparation software works and whether or not it is reliable. MyTax reduces time, cost and guesswork will be eliminated.';
 const uploadFiles = 'Upload files is good to use when needing more space';
 const liveChatAndCalling = 'Live Chat & calling; ventore natus dolor ipsa alias totam quaerat, porro minus. Fuga molestiae, rem quaerat vitae amet provident nesciunt veniam? Consectetur, inventore velit?'; 
-const connectSocially = 'Connect Socially; icabo inventore natus dolor ipsa alias totam quaerat, porro minus. Fuga molestiae, rem quaerat vitae amet provident nesciunt veniam? Consectetur, inventore velit?';
-const questionAndAnswers = 'Questions; icabo inventore natus dolor ipsa al';
-const reviews = 'Reviews: icabo inventore natus dolor ipsa al';
+const connectSocially = '<i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <i class="fab fa-linkedin-in"></i>';
+const questionAndAnswers = 'Questions? </br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia obcaecati rem eveniet animi incidunt tempore corrupti, assumenda quaerat ab suscipit. Quaerat laborum odio voluptatum facere eius natus deserunt corporis ipsum?';
+const reviews = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia obcaecati rem eveniet animi incidunt tempore corrupti, assumenda quaerat ab suscipit. Quaerat laborum odio voluptatum facere eius natus deserunt corporis ipsum?';
 
 //Variables
 var currentInfoDisplayed = 'MyTax services are on your side, you won\'t need to worry about how tax preparation software works and wheter or not it is reliable. MyTax reduces time, cost and guesswork will be eliminated. MyTax services are on your side, you won\'t need to worry about how tax preparation software works and whether or not it is reliable. MyTax reduces time, cost and guesswork will be eliminated.';

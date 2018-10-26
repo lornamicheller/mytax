@@ -39,10 +39,11 @@ section {
 
 .big-container {
     width: 100%;
-    height: 950px;
+    height: auto;
     display: flex;
     font-family: 'Raleway', sans-serif;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .left-container {
@@ -242,7 +243,8 @@ section {
 
 .second-section {
     width: 100%;
-    height: 580px;
+    height: auto;
+    padding-bottom: 40px;
     box-shadow: 3px 3px 5px 6px #cbcbcb;
 }
 
@@ -307,6 +309,17 @@ section {
 }
 
 .plan-instructor-info {
+    height: 150px;
+    width: 100%;
+    border: 1px solid #cbcbcb;
+    line-height: 30px;
+    text-align: justify;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.FAQS {
     height: auto;
     width: 100%;
     border: 1px solid #cbcbcb;
@@ -315,10 +328,17 @@ section {
     padding: 5px 20px;
     box-sizing: border-box;
     font-size: 14px;
+    display: none;
 }
 
-.fa-facebook {
-    color: red;
+.question-button {
+    color: black;
+    font-weight: 700;
+}
+
+
+.answers {
+    display: none;
 }
 
 .related-plan {
@@ -442,6 +462,7 @@ section {
 
 .big-container {
     display: block;
+    height: auto;
 }
 
 .left-container {
@@ -607,11 +628,6 @@ section {
     width: 100%;
 }
 
-footer {
-    padding-top: 2400px;
-}
-
-
 }
 
 /* tablet styles */
@@ -756,11 +772,7 @@ section {
     display: flex;
 }
 
-footer {
-    padding-top: 350px;
 }
-}
-
 
 </style>
     
@@ -946,6 +958,20 @@ footer {
                                 works and wheter or not it is reliable. MyTax reduces time, cost and guesswork will be eliminated. 
                                 MyTax services are on your side, you won't need to worry about how tax preparation software works 
                                 and whether or not it is reliable. MyTax reduces time, cost and guesswork will be eliminated.'</p>
+                            </div>
+
+                            <div class="FAQS">
+                                <span><a href="#" class="question-button">Question?</a></span>
+
+                                <p class="answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus omnis dicta quisquam labore 
+                                optio et perspiciatis porro dolorem ullam, corrupti reprehenderit molestias esse illum perferendis 
+                                voluptas totam. Accusamus, iure? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic doloremque 
+                                animi rerum, eos fuga illum rem laboriosam expedita neque laborum obcaecati quis, impedit saepe eveniet sint 
+                                quisquam nulla voluptate? Cum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel id molestias labore adlorem
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sed amet magnam libero voluptatibus cupiditate, expedita 
+                                soluta repudiandae itaque numquam fugiat nostrum, id, velit omnis! Iure provident cumque corrupti expedita. Lorem ipsum dolor sit 
+                                amet consectetur, adipisicing elit. Nemo, asperiores nesciunt? Ullam, adipisci reiciendis quaerat asperiores aliquid ab. Ipsa nemo 
+                                error voluptates consequatur est autem praesentium excepturi recusandae rerum dolor!</p>
                             </div>
 
                             <h1 class="related-plans">RELATED PLANS</h1>
@@ -1180,9 +1206,6 @@ s0.parentNode.insertBefore(s1,s0);
 
         // slide down and up functions 
 
-
-
-
 //Constants
 const planDescription = 'MyTax services are on your side, you won\'t need to worry about how tax preparation software works and wheter or not it is reliable. MyTax reduces time, cost and guesswork will be eliminated. MyTax services are on your side, you won\'t need to worry about how tax preparation software works and whether or not it is reliable. MyTax reduces time, cost and guesswork will be eliminated.';
 const uploadFiles = 'Upload files is good to use when needing more space';
@@ -1235,14 +1258,24 @@ $('.connect-socially').on('click', (event) =>  {
 });
 
 $('.question-answer').on('click', (event) =>  {
+    event.preventDefault();
     $('.plan-description').removeClass('pressed');
     $('.upload-file').removeClass('pressed');
     $('.live-chat').removeClass('pressed');
     $('.connect-socially').removeClass('pressed');
     $('.question-answer').addClass('pressed');
     $('.reviews').removeClass('pressed');
-    planInstructorButtonClicked(questionAndAnswers, event);
+    $('.plan-instructor-info').hide();
+    $('.FAQS').show();
+    //planInstructorButtonClicked(questionAndAnswers, event);
 });
+
+$(document).ready(function () {
+    $('.question-button').on('click', (event) => {
+        event.preventDefault(); 
+        $('.answers').toggle(400);
+    })
+})
 
 $('.reviews').on('click', (event) =>  {
     $('.plan-description').removeClass('pressed');
@@ -1256,11 +1289,17 @@ $('.reviews').on('click', (event) =>  {
 
 function planInstructorButtonClicked(clicked_id, event) {
     event.preventDefault(); 
+    $('.FAQS').hide();
+    $('.answers').hide();
+    $('.plan-instructor-info').show();
     if (currentInfoDisplayed !== clicked_id) {
         currentInfoDisplayed = clicked_id;
         $('.plan-instructor-info').html(currentInfoDisplayed);
     } 
 };
+
+
+// plan description functions ends
 
 $(document).ready(function () {
   $('.menu-toggle').click(function () {
